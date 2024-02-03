@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Test Suggestion</title>
+
+    <style>
+        
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+    
+        .background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            animation: fadeIn 2s ease-in-out; 
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 0.8;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+<section class="background">
+    <img src="background1.jpg" alt="Background Image">
+</section>
+
+<!-- ye apna Navbar he bacchi -->
+<section class="content">
+<header>
+    <nav>
+        <div class="logo">
+            <img src="the.png" alt="Your Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="search-section">
+    <div class="search-container">
+        <input type="text" id="symptomInput" placeholder="Type your symptoms...">
+        <button class="search-button" onclick="searchSymptoms()">Search</button>
+    </div>
+</section>
+
+<section class="symptoms-container">
+    <div id="symptomsList">
+        <label><input type="checkbox" value="Symptom1"> Urge to Urinate at Night</label>
+        <label><input type="checkbox" value="Symptom2"> Craving Sweet Items</label>
+        <label><input type="checkbox" value="Symptom3"> Weight Loss</label>
+        <label><input type="checkbox" value="Symptom4"> Chills</label>
+        <label><input type="checkbox" value="Symptom5"> Weakness</label>
+        <label><input type="checkbox" value="Symptom6"> Bleeding Tendencies</label>
+        <label><input type="checkbox" value="Symptom7"> Dizziness</label>
+        <label><input type="checkbox" value="Symptom8"> Exhaustion</label>
+        <label><input type="checkbox" value="Symptom9"> Body Pain</label>
+        <label><input type="checkbox" value="Symptom10"> Joint Pain</label>
+        <label><input type="checkbox" value="Symptom11"> Yellowing of Skin</label>
+        <label><input type="checkbox" value="Symptom12"> Yellowing of Sclera</label>
+        <label><input type="checkbox" value="Sympto13"> Anorexia</label>
+        <label><input type="checkbox" value="Symptom14"> Indigestion</label>
+        <label><input type="checkbox" value="Symptom15"> Nausea</label>
+        <label><input type="checkbox" value="Symptom16"> Clay-Colored Stool</label>
+        <label><input type="checkbox" value="Symptom17"> Numbness</label>
+        <label><input type="checkbox" value="Symptom18"> Chest Pain</label>
+        <label><input type="checkbox" value="Symptom19"> Heart Attack</label>
+        <label><input type="checkbox" value="Symptom20"> Anxiety</label>
+        <label><input type="checkbox" value="Symptom21"> Intense Sweating</label>
+        <label><input type="checkbox" value="Symptom22"> Dysphagia</label>
+        <label><input type="checkbox" value="Symptom23"> Redness of Sclera</label>
+        <label><input type="checkbox" value="Symptom24"> Edema</label>
+        <label><input type="checkbox" value="Symptom25"> Fatigue</label>
+        <label><input type="checkbox" value="Symptom26"> Barfing</label>
+        <label><input type="checkbox" value="Symptom27"> Constipation</label>
+        <label><input type="checkbox" value="Symptom28"> Watery Stools</label>
+        <label><input type="checkbox" value="Symptom29"> Dyspnea</label>
+        <label><input type="checkbox" value="Symptom30"> Emesis</label>
+        <label><input type="checkbox" value="Symptom31"> Weight Gain</label>
+        <label><input type="checkbox" value="Symptom32"> Abdominal Pain</label>
+        <label><input type="checkbox" value="Symptom33"> Pain that radiates to the lower abdomen and groin</label>
+        <label><input type="checkbox" value="Symptom34"> Pain or burning sensation while urinating</label>
+        <label><input type="checkbox" value="Symptom35"> Hairfall</label>
+        <label><input type="checkbox" value="Symptom36"> Brittle Teeth</label>
+        <label><input type="checkbox" value="Symptom37"> Knocking Sound from Joints</label>
+        <label><input type="checkbox" value="Symptom38"> Swollen Joints</label>
+        <label><input type="checkbox" value="Symptom39"> Headaches</label>
+        <label><input type="checkbox" value="Symptom40"> Stuffy Nose</label>
+        <label><input type="checkbox" value="Symptom41"> Constant Cold</label>
+        <label><input type="checkbox" value="Symptom42"> Difficult Falling Asleep at Night</label>
+        <label><input type="checkbox" value="Symptom43"> Blood in Stools</label>
+    
+    
+    </div>
+
+
+    <div class="get-test-button center">
+        <button class="btn" onclick="getTest()">Get Test</button>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>&copy; <b>2024 ShlokNavedUmar.</b> All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</section>
+</section>
+ <script src="script.js">
+ </script> 
+</body> 
