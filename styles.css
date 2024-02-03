@@ -74,7 +74,7 @@ nav li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 80%;
 }
 
 #symptomInput {
