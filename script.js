@@ -16,6 +16,31 @@ document.getElementById("symptomInput").addEventListener("input", function () {
     }
 });
 
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+}
+
+
+window.addEventListener('scroll', function() {
+    
+    const upButton = document.getElementById('upButton');
+
+
+    if (window.scrollY > 20) {
+        upButton.style.display = 'block';
+    } else {
+        upButton.style.display = 'none';
+    }
+});
+
+
+
+
 function getTest() {
     alert("Getting test...");
 }
